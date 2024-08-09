@@ -2,9 +2,7 @@ package jobsProducerPackage;
 
 
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Job {
     private String id;
     private String title;
@@ -25,11 +23,11 @@ public class Job {
     }
 
     public String getCategory() {
-        return created;
+        return category;
     }
 
-    public void setCategory(String created) {
-        this.created = created;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public Number getSalary_min() {
